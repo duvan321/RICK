@@ -4,9 +4,7 @@ import axios from "axios";
 export const get_characters = () => {
   try {
     return async function (dispatch) {
-      const response = await axios.get(
-        "http://localhost:3001/rickandmorty/characters/"
-      );
+      const response = await axios.get("/rickandmorty/characters/");
       const character = response.data;
       dispatch({
         type: GET_CHARACTERS,
@@ -20,7 +18,7 @@ export const get_characters = () => {
 export const addFav = (character) => {
   try {
     return async (dispatch) => {
-      const endpoint = "http://localhost:3001/rickandmorty/fav";
+      const endpoint = "/rickandmorty/fav";
       const { data } = await axios.post(endpoint, character);
       return dispatch({
         type: ADD_FAV,
@@ -34,7 +32,7 @@ export const addFav = (character) => {
 
 export const removeFav = (id) => {
   try {
-    const endpoint = "http://localhost:3001/rickandmorty/fav/" + id;
+    const endpoint = "/rickandmorty/fav/" + id;
     return async (dispatch) => {
       const { data } = await axios.delete(endpoint);
       if (data.length < 0) throw Error("No hay favoritos");
@@ -51,7 +49,7 @@ export const removeFav = (id) => {
 export const posLogin = (formData) => {
   return async function () {
     try {
-      await axios.post("http://localhost:3001/rickandmorty/login/", formData);
+      await axios.post("/rickandmorty/login/", formData);
 
       alert("te as registrado exitosamente:", formData);
     } catch (error) {

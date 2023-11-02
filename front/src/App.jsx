@@ -11,9 +11,9 @@ import Favorites from "./components/Favorites/Favorites";
 import { removeFav } from "./Redux/actions";
 import { useDispatch } from "react-redux";
 // const URL = "https://rickandmortyapi.com/api/character/";
-const URL = "http://localhost:3001/rickandmorty/character";
+const URL = "/rickandmorty/character";
 const URL_API = "key=henrym-duvan321";
-
+axios.defaults.baseURL = "https://rick-production-9f6d.up.railway.app/";
 function App() {
   const [characters, setCharacters] = useState([]);
   const { pathname } = useLocation();
@@ -47,7 +47,7 @@ function App() {
   async function login(userData) {
     try {
       const { email, password } = userData;
-      const URL = "http://localhost:3001/rickandmorty/login/";
+      const URL = "/rickandmorty/login/";
       const { data } = await axios(
         URL + `?email=${email}&password=${password}`
       );

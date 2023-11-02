@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import style from "../Detail/Detail.module.css";
 // const URL = "https://rickandmortyapi.com/api/character/";
-const URL = "http://localhost:3001/rickandmorty/character/";
+const URL = "/rickandmorty/character/";
 const URL_API = "key=henrym-duvan321";
 const Detail = () => {
   const { id } = useParams();
