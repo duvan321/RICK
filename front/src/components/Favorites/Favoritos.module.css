@@ -1,0 +1,29 @@
+.favorito {
+  margin: auto;
+  display: flex;
+  position: relative;
+  margin-top: 0px;
+  flex-direction: column;
+  color: aliceblue;
+}
+.favCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.fav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+select {
+  background-color: rgb(111, 239, 47);
+  margin: 4px;
+  border: none;
+  border-radius: 7rem;
+  color: rgb(117, 114, 114);
+}

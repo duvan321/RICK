@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardForm {
+  text-align: center;
+  margin-top: 5em;
+  width: 20em;
+  color: rgb(33, 71, 14);
+  margin-bottom: 10px;
+  margin: 10px;
+  background-color: rgb(146, 231, 131);
+  opacity: calc(0.8);
+  border-radius: 10%;
+}
+.formImage {
+  margin-top: 15px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.cardForm label {
+  font-size: 1.5rem;
+}
+.cardForm p {
+  color: red;
+}
+.cardForm button {
+  background-color: chartreuse;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.cardForm button :hover {
+  background-color: forestgreen;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  padding: 2px;
+}
+.inputForm,
+input:focus {
+  outline: none;
+}
+.inputForm {
+  border: none;
+}
+
+@media (max-width: 800px) {
+  .cardForm {
+    color: brown;
+    width: 15em;
+  }
+}

@@ -1,0 +1,116 @@
+.card {
+  margin-top: 10px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(131, 153, 231);
+  box-sizing: 5px;
+  overflow: hidden;
+  margin: 10px;
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(111, 239, 47);
+}
+.card .head {
+  height: 125px;
+  width: 100%;
+  position: relative;
+}
+.card .head .circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(32, 207, 16);
+  bottom: 0;
+}
+.card .head .img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+}
+.card .head .img img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+.card .descripcion {
+  height: 200px;
+  padding: 40px 20px 20px 20px;
+}
+.card .descripcion .name {
+  color: rgb(11, 38, 134);
+  text-decoration: none;
+}
+.card .descripcion .species {
+  color: rgb(139, 14, 118);
+}
+
+.card .head .img .favorite {
+  background-color: rgb(61, 84, 174);
+  position: absolute;
+  top: 5rem;
+  left: 0rem;
+  border: none;
+  border-radius: 9rem;
+  cursor: pointer;
+}
+.card .head .img .button {
+  background-color: rgb(61, 84, 174);
+  width: 30px;
+  position: absolute;
+  top: 5rem;
+  left: 8rem;
+  border: none;
+  border-radius: 9rem;
+  cursor: pointer;
+}
+
+.card:hover .head .img .favorite,
+.card:hover .head .img .button {
+  display: block;
+}
+.card .head .img .favorite:hover,
+.card .head .img .button:hover {
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgb(50, 28, 131);
+}
+.favoritos {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .favoritos {
+  left: 0;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 500px) {
+  .card {
+    width: 250px;
+    height: 250px;
+  }
+  .card .descripcion {
+    height: 0px;
+    padding: 20px 0px 0px 0px;
+  }
+}

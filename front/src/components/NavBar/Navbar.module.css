@@ -1,0 +1,131 @@
+nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+a {
+  text-decoration: none;
+}
+nav ul li {
+  display: block;
+  color: white;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+.botone1 {
+  background-color: rgb(32, 207, 16);
+  font-size: 1rem;
+}
+
+.botone2 {
+  background-color: rgb(32, 207, 16);
+  margin-left: 5em;
+}
+.botone3 {
+  background-color: rgb(32, 207, 16);
+  margin-left: 5em;
+}
+.botone4 {
+  background-color: rgb(32, 207, 16);
+  margin-left: 8em;
+}
+.botone5 {
+  background-color: rgb(32, 207, 16);
+  margin-left: 8em;
+}
+.searchBar {
+  margin-left: 10em;
+}
+.botone1:hover,
+.botone2:hover,
+.botone3:hover,
+.botone4:hover,
+.botone5:hover,
+.searchBar {
+  border-radius: 14px; /* Un radio más grande para un efecto de iluminación más pronunciado */
+  transition: all 0.3s ease; /* Agregar una transición suave de 0.3 segundos */
+  box-shadow: 0 0 20px rgb(111, 239, 47); /* Agregar una sombra para enfatizar el efecto */
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .botone1 {
+    background-color: rgb(32, 207, 16);
+    font-size: 1rem;
+  }
+  .botone1,
+  .botone2,
+  .botone3,
+  .botone4,
+  .botone5,
+  .searchBar {
+    margin: 5px;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+  ul {
+    padding: 0px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  nav ul.open {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  nav ul li {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul li {
+    margin: 0.2rem 0.5rem;
+  }
+  a {
+    margin: 0;
+  }
+}

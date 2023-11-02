@@ -1,0 +1,11 @@
+body {
+  min-height: 100vh;
+  text-align: center;
+  background-image: url("https://www.xtrafondos.com/wallpapers/resized/rick-y-morty-escapando-de-portal-9235.jpg?s=large");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-attachment: fixed;
+}
