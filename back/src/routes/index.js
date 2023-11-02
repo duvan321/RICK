@@ -1,4 +1,3 @@
-const { login } = require("../controllers/login");
 const { deleteFav } = require("../controllers/deleteFav");
 const { postFav } = require("../controllers/postFav");
 const { postUser } = require("../controllers/postUser");
