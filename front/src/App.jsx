@@ -13,7 +13,7 @@ import { useDispatch } from "react-redux";
 // const URL = "https://rickandmortyapi.com/api/character/";
 const URL = "/rickandmorty/character";
 const URL_API = "key=henrym-duvan321";
-axios.defaults.baseURL = "https://rick-production-9f6d.up.railway.app/";
+axios.defaults.baseURL = "https://rick-production-b164.up.railway.app/";
 function App() {
   const [characters, setCharacters] = useState([]);
   const { pathname } = useLocation();
